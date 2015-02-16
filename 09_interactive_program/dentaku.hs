@@ -29,6 +29,7 @@ getCh =  do hSetEcho stdin False
 --         putChar c
 --         putChar '\n'
 
+-- 9.5. アクションの部品
 --getLine :: IO String
 --getLine = do x <- getChar
 --             if x == '\n' then
@@ -76,7 +77,7 @@ seqn (a: as) = do a
 
 --putStr xs = seqn [putChar x | x <- xs]
 
---9.6. 電卓
+-- 9.6. 電卓
 box :: [String]
 box = ["+---------------+",
        "|               |",
