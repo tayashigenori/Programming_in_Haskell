@@ -110,7 +110,7 @@ calc xs = do display xs
              c <- getCh
              if elem c buttons then
                  process c xs
-             else
+              else
                  do beep
                     calc xs
 
